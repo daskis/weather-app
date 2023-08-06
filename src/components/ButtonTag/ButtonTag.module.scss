@@ -1,0 +1,59 @@
+.Button {
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.xs {
+  border-radius: 5px;
+}
+
+.sm {
+  border-radius: 10px;
+}
+
+.md {
+  border-radius: 15px;
+}
+
+.lg {
+  border-radius: 20px;
+}
+
+.xl {
+  border-radius: 30px;
+}
+
+.small {
+  font-size: 10px;
+  padding: 4px 10px;
+}
+
+.medium {
+  font-size: 14px;
+  padding: 8px 16px;
+
+}
+
+.large {
+  font-size: 18px;
+  padding: 12px 24px;
+
+}
+
+.primary {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--white)
+}
+.primary:hover {
+  background: var(--primary-light);
+}
+.ghost {
+  background: inherit;
+  color: var(--black);
+  border-color: var(--primary)
+}
+.ghost:hover {
+  background: var(--primary-lighther);
+}

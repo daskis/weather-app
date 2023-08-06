@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.titleWrapper {
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+
+.text {
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s all ease;
+}
+
+.close {
+  transition: 0.3s all ease;
+  overflow: hidden;
+  height: 0;
+  display: none;
+}
+.arrow {
+  transition: 0.3s all ease;
+  transform: scale(1.4);
+}
+.turned {
+
+  transform: scale(1.4) rotate(180deg);
+}
+.open {
+  transition: 0.3s all ease;
+  overflow: auto;
+  display: block;
+  padding: 10px;
+  height: fit-content !important;
+}

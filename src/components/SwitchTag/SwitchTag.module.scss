@@ -1,0 +1,32 @@
+.wrapper {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  padding: 4px 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.checked {
+  background: #eee !important;
+}
+.primary {
+  background: var(--primary);
+}
+.circle {
+  transition: 0.3s all ease;
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+.circleChecked {
+  transition: 0.3s all ease;
+
+
+  left: 30px;
+}

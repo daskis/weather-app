@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 20px;
+  width: 100%;
+}
+.title {
+  font-size: 32px;
+}
+.list {
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &Item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.text {
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.5;
+}

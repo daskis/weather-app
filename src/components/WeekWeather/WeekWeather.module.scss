@@ -1,0 +1,64 @@
+.wrapper {
+  width: 20%;
+  background-color: var(--bg-primary);
+  flex-grow: 1;
+  border-radius: 20px;
+  padding: 30px 20px 0px;
+}
+
+.title {
+  font-weight: 500;
+  color: rgba(32, 43, 59, 0.4);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.dayOfWeek {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.temp {
+  justify-content: end;
+  display: flex;
+
+  & div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  & img {
+    width: 60px;
+  }
+
+
+  & .dayTemp {
+    font-weight: 700;
+  }
+
+  & .nightTemp {
+    font-weight: 700;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+}

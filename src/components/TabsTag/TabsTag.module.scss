@@ -1,0 +1,40 @@
+/* Tabs.module.css */
+
+.tabContainer {
+  display: flex;
+  padding: 6px;
+  background-color: var(--tabs-secondary);
+  border-radius: 14px;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.tabButton {
+  flex: 1;
+  border-radius: 10px;
+  background-color: var(--tabs-secondary);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.tabButton.active {
+  background-color:  var(--tabs-primary);
+}
+
+.tabContent {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 500px) {
+  .tabContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

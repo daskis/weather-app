@@ -1,0 +1,50 @@
+
+.current {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .currentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  & .currentTemp {
+    font-size: 54px;
+  }
+
+  & img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .current {
+    & .currentPosition h1 {
+      font-size: 30px;
+    }
+    & .currentInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    & .currentTemp {
+      font-size: 40px;
+    }
+    & img {
+      width: 150px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .current {
+    display: block;
+    & img {
+      display: block;
+      width: 120px;
+      margin: 0 auto;
+    }
+  }
+}

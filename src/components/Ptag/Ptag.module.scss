@@ -1,0 +1,29 @@
+.P {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.small {
+  font-size: 12px;
+  line-height: 16px;
+}
+.medium {
+  font-size: 14px;
+  line-height: 18px;
+}
+.large {
+  font-size: 18px;
+  line-height: 22px;
+}
+.full {
+  opacity: 1;
+}
+.half {
+  opacity: 0.5;
+}
+.primary {
+  color: var(--primary);
+}
+.black {
+  color: var(--black)
+}

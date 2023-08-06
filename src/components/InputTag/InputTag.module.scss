@@ -1,0 +1,82 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.input {
+  outline: none;
+  border-width: 1px;
+  /* Chrome, Safari, Edge, Opera */
+  &:focus + .label {
+    top: -10px;
+    background: #fff;
+    left: 8px;
+    font-size: 0.8em;
+    color: var(--black);
+  }
+
+  &.primary:focus {
+    -webkit-box-shadow: 0px 5px 10px 2px var(--primary);
+    -moz-box-shadow: 0px 5px 10px 2px var(--primary);
+    box-shadow: 0px 0px 2px 0px var(--primary);
+  }
+  &.black:focus {
+    -webkit-box-shadow: 0px 5px 10px 2px var(--black);
+    -moz-box-shadow: 0px 5px 10px 2px var(--black);
+    box-shadow: 0px 0px 2px 0px var(--black);
+  }
+}
+
+.primary {
+  border-color: var(--primary);
+}
+
+.black {
+  border-color: var(--black);
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.label {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all ease;
+  display: inline;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 1em;
+  background: inherit;
+  position: absolute;
+
+}
+
+.small {
+  border-radius: 4px;
+  font-size: 10px;
+  padding: 6px 10px;
+  & + .label {
+    font-size: 1em;
+    left: 6px;
+    top: 3px;
+    bottom: 0;
+  }
+}
+
+.medium {
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 8px 12px;
+  & + .label {
+    font-size: 1em;
+    left: 14px;
+    top: 6px;
+    bottom: 0;
+  }
+}

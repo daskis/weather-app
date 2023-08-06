@@ -1,0 +1,36 @@
+.react-dadata__input {
+  padding: 30px 20px !important;
+  border-radius: 14px !important;
+  box-shadow: none;
+  background-color: var(--bg-primary);
+  font-size: 20px !important;
+  border: none !important;
+  &:focus {
+    outline: none;
+  }
+}
+.search {
+  position: relative;
+  width: 90%;
+  &Label {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(32, 43, 59, 0.5);
+    position: absolute;
+  }
+}
+.react-dadata__container {
+  width: 100% !important;
+}
+
+.searchWrapper {
+  gap: 20px;
+  display: flex;
+  & img {
+    width: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
